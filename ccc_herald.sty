@@ -80,7 +80,6 @@
   \parbox[#1]{.3\textwidth}{#6}
   \hfill
   \parbox[#1]{.1\textwidth}{#7}
- % \parbox[#1]{.333\textwidth}{\raggedleft{4}}\par\smallskip
 }
 
 % define specific layout commands
@@ -96,7 +95,7 @@
 %%% based on A5 quer, has to be defined in a main, though
 % this is as generic as possible, but margin need to be 1cm
 
-% Saal G    12:45     Day 1   Track: Hardware ..      en
+% Saal G    12:45   00:45    Day 1   Track: Hardware   en
 %
 % \big{Titel}: 3D Casting Aluminium
 % Subtitle: xyz
@@ -115,51 +114,15 @@
   \begin{titlepage}
     \def\@foot@er{}
     \thispagestyle{empty}
-   % \enlargethispage{1cm}
-    %\vspace*{1cm}
-  %  \setlength\oddsidemargin{1cm}
-     % \begin{center}
-      
-    %{\mbox{
-       % \begin{tabular}{ccccc}
-       % \printlocation & \printtimeofevent & \printdayofevent & \printtrack & \printlanguage \\
-      %  \end{tabular}
-      %}
-\headline[t]{Saal: \printlocation} {\printtimeofevent} {\printduration} {Day: \printdayofevent} {Track: \printtrack} {\printlanguage}
-        %  }
-    % \end{center}
+
+    \headline[t]{Saal: \printlocation} {\printtimeofevent} {\printduration} {Day: \printdayofevent} {Track: \printtrack} {\printlanguage}
     \par
-%    \vfill
-  %\vspace{0.01\paperheight}
-  %\hrulefill\par
-  \vspace{0.015\paperheight}
- % \begin{center}
- % {\mbox{
- %   \begin{description}
-      \textline[t] {\large Title:} {\large \textbf{\printtitle}}
-      %\par
-      %\vspace{0.01\paperheight}
-      \textline[t] {Subtitle:} {\printsubtitle}
-      %\par
-      %\vspace{0.01\paperheight}
-      \textline[t]{\large Speaker:} {\large \textbf{\printspeaker}}
-      \vspace{0.015\paperheight}
-      \textline[t]{\textbf{Short:}} {\textit{\printshorttext}}
-      %\par
-      %\vspace{0.01\paperheight}
-      \textline[t]{\textbf{Long:}} {\printlongtext}
-%      \par
-      %\par
-      %\vspace{0.01\paperheight}
-%      \textline[t]{\textbf{Kurzbio:}} {\printshortbio}
-  %  \vfill
-   % \hfill
-   % {\footnotesize ID: \printid}
-   % \end{description}
-  %      }
-  %}
-  %\end{center}
-  %{\small \@foot@er \par \smallskip \@date}
-  %\textline[t]{Speaker:}{H. Toothtroot}
+    \vspace{0.015\paperheight}
+    \textline[t] {\large Title:} {\large \textbf{\printtitle}}
+    \textline[t] {Subtitle:} {\printsubtitle}
+    \textline[t]{\large Speaker:} {\large \textbf{\printspeaker}}
+    \vspace{0.015\paperheight}
+    \textline[t]{\textbf{Short:}} {\textit{\printshorttext}}
+    \textline[t]{\textbf{Long:}} {\printlongtext}
   \end{titlepage}
   }
