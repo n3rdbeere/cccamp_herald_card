@@ -13,15 +13,18 @@
 % Day of Event:   \dayofevent{}
 % Track:          \track{}
 % Language:       \language{}
+% Talk ID:        \id{}
 
 \eventtitle{Three Headed Monkey}
 \subtitle{Right behind you}
 \shorttext{There is an Island somewehere in the Sea..}
 \longtext{This talk is about the specific species which some people say whether it is right behind you or does not exist at all.}
 \speaker{Guybrush Threepwood}
-\shortbio{Guybrush is a mighty pirate}
 \location{A}
 \timeofevent{12:45}
+\duration{00:45}
 \dayofevent{1}
 \track{Monkey Island}
 \language{en}
+\id{172342}
+\translation{4217}
